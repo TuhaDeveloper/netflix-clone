@@ -1,0 +1,419 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: white;
+}
+
+p {
+    margin: .5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.Main-page {
+    width: 100%;
+    background: url("./img/background.jpg") no-repeat center center/cover;
+    height: 100vh;
+}
+
+.Main-page::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
+}
+
+
+.btn {
+    text-decoration: none;
+    background-color: rgb(241, 0, 0);
+    color: white;
+}
+
+.btn-primary {
+    padding: 7px 1rem;
+    border-radius: 7px;
+}
+
+.btn-primary:hover {
+
+    background-color: rgb(194, 0, 0);
+
+}
+
+.btn-lg {
+    padding: 1.5rem 1.4rem;
+    border-radius: 2px;
+    margin: .6rem;
+    transition: .5s;
+    z-index: 1;
+    font-size: 1.5rem;
+    background-color: red;
+
+}
+
+.btn-lg:hover {
+    background-color: red;
+}
+
+
+
+.top-header {
+    z-index: 2;
+    height: 90px;
+    position: relative;
+
+}
+
+.head-img img {
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sing-up {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.center-element {
+    position: relative;
+    color: wheat;
+    margin: auto;
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.center-element h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 0 0 1.9rem 0;
+}
+
+.center-element p {
+    font-size: 1.9rem;
+    line-height: 1.1;
+    margin: 0 0 2rem;
+}
+
+/* start middle part */
+.middle {
+    background-color: rgb(49, 48, 48);
+    padding: 0 5rem;
+    padding-top: 1rem;
+    border-bottom: 3px solid gray;
+}
+
+.middle-part {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+.middle-part>div {
+    padding: 1.5rem 0;
+    border-bottom: 4px solid rgb(49, 48, 48);
+
+}
+
+.middle-part p {
+    padding-top: .5rem;
+
+}
+
+.middle-part i {
+    font-size: 40px;
+}
+
+.middle-part>div:hover {
+    color: white;
+    cursor: pointer;
+    border-bottom: 4px solid red;
+}
+
+.tab-border {
+    border-bottom: 4px solid red;
+}
+
+/* end middle part */
+
+/* this is start last section*/
+.action-show {
+    padding: 3rem;
+    background-color: #000;
+}
+
+
+/* 
+.show {
+    display: block;
+} */
+
+
+.active-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-element .btn-lg {
+    position: absolute
+}
+
+.second-element {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    text-align: center;
+}
+
+.images-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+}
+
+
+
+.third-element {
+    display: grid;
+    justify-content: center;
+    margin: .3rem 0;
+}
+
+.third-element a {
+    font-size: 1.2rem;
+    width: 60%;
+    margin: .4rem auto;
+}
+
+.third-element h2 {
+    margin-bottom: .5rem;
+}
+
+table {
+    color: white;
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+table thead th {
+    padding: .5rem .5rem;
+    color: white;
+}
+
+table tbody td {
+    padding: .8rem 1.3rem;
+    color: rgb(177, 175, 175);
+    text-align: center;
+}
+
+table tbody tr td:first-child {
+    text-align: left;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #222;
+}
+
+.first-action-show,
+.second-action-show,
+.third-action-show {
+    display: none;
+}
+
+.current {
+    display: flex;
+    flex-direction: column;
+}
+
+/* this is End last section*/
+
+
+/* start footer section */
+footer {
+    background-color: #000;
+    padding: 1rem;
+    padding-left: 7rem;
+}
+
+footer p {
+    color: gray;
+    margin: 0;
+
+}
+
+.footer-link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 0;
+}
+
+.footer-link li {
+    padding: .4rem 0;
+}
+
+.footer-link li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-link li a:hover {
+    text-decoration: underline;
+}
+
+.action-show {
+    position: relative;
+}
+
+@media screen and (max-width:7680px) {
+
+    .second-element a {
+        padding: .7rem .5rem;
+        font-size: small
+    }
+}
+
+@media screen and (max-width:500px) {
+    .Main-page img {
+        width: 20%;
+        display: flex;
+        position: absolute;
+        left: 70px;
+    }
+
+    .sing-up a {
+        font-size: x-small;
+    }
+
+    .center-element {
+        margin-top: 1rem;
+    }
+
+    .center-element h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .center-element p {
+        font-size: .9rem;
+        line-height: .1;
+        margin: 0 0 2rem;
+    }
+
+    .btn-lg {
+        font-size: 1rem;
+
+    }
+
+    .middle-part {
+        display: flex;
+        font-size: 10px;
+        justify-content: space-around;
+    }
+
+    .active-element {
+        display: flex;
+        flex-direction: column;
+        font-size: xx-small;
+    }
+
+    .action-show {
+        padding: 1rem;
+    }
+
+    .first-element .btn-lg {
+        display: none;
+    }
+
+    .first-element {
+        margin-bottom: 2rem;
+    }
+
+    .second-element {
+        font-size: x-small;
+        display: flex;
+    }
+
+    .second-element a {
+        display: none;
+    }
+
+    .third-element {
+        font-size: x-small;
+        text-align: center;
+    }
+
+    .third-element a {
+        margin-top: .5rem;
+        font-size: xx-small;
+        padding: 10px;
+        width: fit-content;
+    }
+
+    table {
+        font-size: xx-small;
+    }
+
+    table tbody td {
+        padding: .2rem .4rem;
+    }
+
+    footer {
+        padding-left: 1rem;
+    }
+
+    .footer-link {
+        font-size: x-small;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+/* end footer section */
